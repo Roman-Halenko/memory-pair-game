@@ -7,7 +7,7 @@ body {
 main {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   height: 100%;
   background: url(image/rick-and-morty.jpg);
@@ -19,11 +19,12 @@ main {
 }
 
 section {
+  margin-top: 25px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  height: 600px;
-  width: 600px;
+  height: 50vw;
+  width: 50vw;
   justify-content: space-between;
 }
 
@@ -43,7 +44,6 @@ img {
   height: 23%;
   width: 23%;
   transition-duration: 800ms;
-
 }
 
 .flipper-container.open .card {
@@ -96,7 +96,8 @@ img {
 
 @media screen  and (max-width: 750px) {
   section {
-    width: 90%;
+    height: 90vw;
+    width: 90vw;
   }
 
   main {
